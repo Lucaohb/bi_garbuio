@@ -22,7 +22,7 @@ st.set_page_config(page_title="Portal BI", layout="wide")
 def get_db_connection():
     conn = pyodbc.connect(
     'DRIVER={ODBC Driver 17 for SQL Server};'
-    'SERVER=186.209.34.142;'  # Inclua o número da porta se necessário
+    'SERVER=186.209.34.142, 1433;'  # Inclua o número da porta se necessário
     'DATABASE=BI_Dashboard;'
     'UID=sa;'
     'PWD=G@rbuio24;'
