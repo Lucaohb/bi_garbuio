@@ -27,7 +27,7 @@ def get_db_connection():
         f'UID={st.secrets["sqlserver"]["user"]};'
         f'PWD={st.secrets["sqlserver"]["password"]};'
         'TrustServerCertificate=yes;'
-        'Connection Timeout=60;'
+        'Timeout=30;'
     )
     return conn
 
