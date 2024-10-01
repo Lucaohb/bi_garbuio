@@ -23,7 +23,7 @@ def get_db_connection():
     conn = pyodbc.connect(
     'DRIVER={ODBC Driver 17 for SQL Server};'
     'SERVER=186.209.34.142\BI_DASHBOARD;'  # Inclua o número da porta se necessário
-    'port = 1433;'"
+    'port = 1433;'
     'DATABASE=BI_Dashboard;'
     'UID=sa;'
     'PWD=G@rbuio24;'
