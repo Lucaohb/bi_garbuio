@@ -26,6 +26,7 @@ def get_db_connection():
     'DATABASE=BI_Dashboard;'
     'UID=sa;'
     'PWD=G@rbuio24;'
+    'Timeout=30;' 
 )
 
 
