@@ -21,14 +21,14 @@ st.set_page_config(page_title="Portal BI", layout="wide")
 # Conexão com o banco de dados SQL Server
 def get_db_connection():
     conn = pyodbc.connect(
-        'DRIVER={ODBC Driver 17 for SQL Server};'  # Verifique se o driver está instalado
-        f'SERVER={st.secrets["sqlserver"]["server"]};'
-        f'DATABASE={st.secrets["sqlserver"]["database"]};'
-        f'UID={st.secrets["sqlserver"]["user"]};'
-        f'PWD={st.secrets["sqlserver"]["password"]};'
-        'TrustServerCertificate=yes;'
-        'Timeout=30;'
-    )
+    'DRIVER={ODBC Driver 17 for SQL Server};'
+    f'SERVER={st.secrets["sqlserver"]["server"]};'
+    f'DATABASE={st.secrets["sqlserver"]["database"]};'
+    f'UID={st.secrets["sqlserver"]["user"]};'
+    f'PWD={st.secrets["sqlserver"]["password"]};'
+    'Connection Timeout=30;'
+)
+
     return conn
 
 # Função para salvar logs no banco de dados SQL Server
